@@ -1,0 +1,34 @@
+{
+  "name": "stmqtt",
+  "version": "2.6.0",
+  "slug": "stmqtt",
+  "description": "Bridge between SmartThings and MQTT.",
+  "url": "https://github.com/m-e-h/hassio-addons",
+  "arch": ["amd64", "armhf"],
+  "startup": "application",
+  "boot": "auto",
+  "host_network": true,
+  "map": ["config:rw", "ssl"],
+  "options": {
+    "broker_host": "172.17.0.1",
+    "mqtt_port": 1883,
+    "preface": "smartthings",
+    "state_read_suffix": "state",
+    "state_write_suffix": "set_state",
+    "command_suffix": "cmd",
+    "bridge_port": 2080,
+    "username": "username",
+    "password": "password"
+  },
+  "schema": {
+    "broker_host": "str",
+    "mqtt_port": "port",
+    "preface": "str",
+    "state_read_suffix": "str",
+    "state_write_suffix": "str",
+    "command_suffix": "str",
+    "bridge_port": "port",
+    "username": "str",
+    "password": "str"
+  }
+}
