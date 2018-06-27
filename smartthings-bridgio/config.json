@@ -1,5 +1,5 @@
 {
-  "name": "stmqtt",
+  "name": "Smartthings Bridgio",
   "version": "2.6.0",
   "slug": "stmqtt",
   "description": "Bridge between SmartThings and MQTT.",
