@@ -1,6 +1,6 @@
 {
   "build_from": {
     "armhf": "arm32v7/node:9",
-    "amd64": "node:9-alpine"
+    "amd64": "node:9"
   }
 }
