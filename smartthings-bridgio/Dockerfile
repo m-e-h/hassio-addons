@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|amd64"
+LABEL io.hass.version="2.9" io.hass.type="addon" io.hass.arch="armhf|amd64"
 
 ENV LANG C.UTF-8
 
@@ -18,7 +18,8 @@ COPY template.yml /
 # Make the bash script executable.
 RUN chmod a+x /run.sh
 
-ENV CONFIG_DIR=/data
+# ENV CONFIG_DIR=/data
+ENV CONFIG_DIR=/config
 
 # EXPOSE 2080
 

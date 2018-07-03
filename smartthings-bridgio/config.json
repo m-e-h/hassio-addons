@@ -4,7 +4,6 @@
   "slug": "stmqtt",
   "description": "Bridge between SmartThings and MQTT.",
   "url": "https://github.com/m-e-h/hassio-addons",
-  "arch": ["amd64", "armhf"],
   "startup": "application",
   "boot": "auto",
   "host_network": true,
@@ -30,5 +29,6 @@
     "bridge_port": "port",
     "username": "str",
     "password": "str"
-  }
+  },
+  "image": "stjohnjohnson/smartthings-mqtt-bridge"
 }
