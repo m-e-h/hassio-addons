@@ -16,13 +16,13 @@ export USERNAME=`node -p "require('$CONFIG_PATH').username"`
 export PASSWORD=`node -p "require('$CONFIG_PATH').password"`
 
 # Push the JSON data to the yaml template and create a config.yml.
-rm -f /config/config.yml temp.yml
-( echo "cat <<EOF >/config/config.yml";
+rm -f /data/config.yml temp.yml
+( echo "cat <<EOF >/data/config.yml";
   cat template.yml;
   echo "EOF";
 ) >temp.yml
 . temp.yml
-cat /config/config.yml
+cat /data/config.yml
 
 # Run the node app.
 smartthings-mqtt-bridge

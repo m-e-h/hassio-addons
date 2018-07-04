@@ -16,8 +16,7 @@ COPY template.yml /
 # Make the bash script executable.
 RUN chmod a+x /run.sh
 
-# ENV CONFIG_DIR=/data
-ENV CONFIG_DIR=/config
+ENV CONFIG_DIR=/data
 
 # EXPOSE 2080
 

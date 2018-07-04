@@ -1,15 +1,16 @@
 {
   "name": "Smartthings Bridgio",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "slug": "stmqtt",
   "description": "Bridge between SmartThings and MQTT.",
   "url": "https://github.com/m-e-h/hassio-addons",
   "startup": "application",
   "boot": "auto",
+  "arch": ["armhf", "amd64"],
   "host_network": true,
   "map": ["config:rw", "ssl"],
   "options": {
-    "broker_host": "172.17.0.1",
+    "broker_host": "core-mosquitto",
     "mqtt_port": 1883,
     "preface": "smartthings",
     "state_read_suffix": "state",
@@ -29,6 +30,5 @@
     "bridge_port": "port",
     "username": "str",
     "password": "str"
-  },
-  "image": "stjohnjohnson/smartthings-mqtt-bridge"
+  }
 }
