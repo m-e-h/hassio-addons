@@ -85,7 +85,7 @@ RUN chmod a+x /run.sh
 ENV CONFIG_DIR=/data
 
 # Hass.io-specific labels
-LABEL io.hass.version="3.0.4" \
+LABEL io.hass.version="3.0.5" \
       io.hass.type="addon" \
       io.hass.arch="armhf|amd64"
 
