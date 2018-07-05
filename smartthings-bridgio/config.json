@@ -1,6 +1,6 @@
 {
   "name": "Smartthings Bridgio",
-  "version": "1.0.0",
+  "version": "1.0",
   "slug": "stmqtt",
   "description": "Bridge between SmartThings and MQTT.",
   "url": "https://github.com/m-e-h/hassio-addons",
