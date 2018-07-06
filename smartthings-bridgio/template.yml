@@ -1,10 +1,10 @@
 ---
 mqtt:
-    host:               ${MQTT_HOST}
-    preface:            ${PREFACE}
-    state_read_suffix:  ${READ_STATE}
-    state_write_suffix: ${WRITE_STATE}
-    command_suffix:     ${COMMAND}
-    username:           ${USERNAME}
-    password:           ${PASSWORD}
-port:                   ${BRIDGE_PORT}
+  host:               ${MQTT_HOST}
+  preface:            ${PREFACE}
+  state_read_suffix:  ${READ_STATE}
+  state_write_suffix: ${WRITE_STATE}
+  command_suffix:     ${COMMAND}
+  username:           ${USERNAME}
+  password:           ${PASSWORD}
+port:                 ${BRIDGE_PORT}

@@ -18,10 +18,10 @@ export PASSWORD=`node -p "require('$CONFIG_PATH').password"`
 # Push the JSON data to the yaml template and create a config.yml.
 rm -f /data/config.yml temp.yml
 ( echo "cat <<EOF >/data/config.yml";
-  cat template.yml;
+  cat /templates/template.yml;
   echo "EOF";
-) >temp.yml
-. temp.yml
+) >/templates/temp.yml
+. /templates/temp.yml
 cat /data/config.yml
 
 # Run the node app.
