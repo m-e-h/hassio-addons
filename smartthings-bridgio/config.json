@@ -6,7 +6,12 @@
   "url": "https://github.com/m-e-h/hassio-addons",
   "startup": "application",
   "boot": "auto",
-  "arch": ["armhf", "amd64"],
+  "arch": [
+      "amd64",
+      "i386",
+      "armhf",
+      "aarch64"
+  ],
   "host_network": true,
   "options": {
     "broker_host": "core-mosquitto",

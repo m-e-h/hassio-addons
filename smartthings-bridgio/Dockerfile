@@ -7,7 +7,9 @@ ENV LANG C.UTF-8
 ENV NODE_ENV production
 
 # Install the node app to our container so we can run it globally.
-RUN yarn global add smartthings-mqtt-bridge@3.0.0 --tilde
+RUN apk upgrade --no-cache \
+    && apk add --no-cache bash jq tzdata ca-certificates \
+    && yarn global add smartthings-mqtt-bridge@3.0.0 --tilde
 
 # Add the user config files to the container.
 COPY run.sh /

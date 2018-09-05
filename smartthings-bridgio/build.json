@@ -1,6 +1,8 @@
 {
   "build_from": {
-    "armhf": "arm32v6/node:9-alpine",
-    "amd64": "node:10-alpine"
+    "amd64": "node:10-alpine",
+    "i386": "i386/node:10-alpine",
+    "armhf": "arm32v6/node:10-alpine",
+    "aarch64": "arm64v8/node:10-alpine"
   }
 }
