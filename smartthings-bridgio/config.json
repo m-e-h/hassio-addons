@@ -20,8 +20,8 @@
     "state_read_suffix": "state",
     "state_write_suffix": "set_state",
     "command_suffix": "command",
-    "username": "username",
-    "password": "password",
+    "username": "",
+    "password": "",
     "retain": true,
     "bridge_port": 2080
   },
