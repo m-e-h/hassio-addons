@@ -1,10 +1,11 @@
 ---
 mqtt:
-  host:               ${MQTT_HOST}
+  host:               ${BROKER_HOST}:${BROKER_PORT}
   preface:            ${PREFACE}
   state_read_suffix:  ${READ_STATE}
   state_write_suffix: ${WRITE_STATE}
   command_suffix:     ${COMMAND}
   username:           ${USERNAME}
   password:           ${PASSWORD}
+  retain:             ${RETAIN}
 port:                 ${BRIDGE_PORT}

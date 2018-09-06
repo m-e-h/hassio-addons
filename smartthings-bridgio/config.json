@@ -1,6 +1,6 @@
 {
   "name": "Smartthings Bridgio",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "slug": "smartthings-bridgio",
   "description": "Bridge between SmartThings and MQTT.",
   "url": "https://github.com/m-e-h/hassio-addons",
@@ -15,24 +15,26 @@
   "host_network": true,
   "options": {
     "broker_host": "core-mosquitto",
-    "mqtt_port": 1883,
+    "broker_port": 1883,
     "preface": "smartthings",
     "state_read_suffix": "state",
     "state_write_suffix": "set_state",
-    "command_suffix": "cmd",
-    "bridge_port": 2080,
-    "username": "",
-    "password": ""
+    "command_suffix": "command",
+    "username": "username",
+    "password": "password",
+    "retain": true,
+    "bridge_port": 2080
   },
   "schema": {
     "broker_host": "str",
-    "mqtt_port": "port",
+    "broker_port": "int",
     "preface": "str",
     "state_read_suffix": "str",
     "state_write_suffix": "str",
     "command_suffix": "str",
-    "bridge_port": "port",
     "username": "str",
-    "password": "str"
+    "password": "str",
+    "retain": "bool",
+    "bridge_port": "int"
   }
 }
