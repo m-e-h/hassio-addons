@@ -1,6 +1,6 @@
 ---
 mqtt:
-  host:               ${BROKER_HOST}:${BROKER_PORT}
+  host:               mqtt://${BROKER_HOST}:${BROKER_PORT}
   preface:            ${PREFACE}
   state_read_suffix:  ${READ_STATE}
   state_write_suffix: ${WRITE_STATE}
