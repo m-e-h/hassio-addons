@@ -19,7 +19,7 @@
     "preface": "smartthings",
     "state_read_suffix": "state",
     "state_write_suffix": "set_state",
-    "command_suffix": "command",
+    "command_suffix": "cmd",
     "username": "",
     "password": "",
     "retain": true,
